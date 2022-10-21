@@ -9,7 +9,6 @@ import {textosInterface } from '../textos.interface';  //interface textos (el "t
 })
 export class HomeComponent implements OnInit {
   @Input() citesEpiquesHome: textosInterface[] = textosjson;
-  //@Input() citesEpiquesHome: textosInterface[] = textosjson[];
 
   constructor() { }
 

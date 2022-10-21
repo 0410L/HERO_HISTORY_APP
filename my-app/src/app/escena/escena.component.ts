@@ -10,6 +10,14 @@ export class EscenaComponent implements OnInit {
 
   @Input() citesEpiques: textosInterface[]=[];
 
+  currentSentence: number = (0);
+  prev(): number {
+    return this.currentSentence--;
+  }
+  next(): number {
+    return this.currentSentence++;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

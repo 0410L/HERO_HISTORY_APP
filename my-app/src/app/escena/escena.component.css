@@ -1,4 +1,4 @@
-div{
+.cita{
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -8,6 +8,7 @@ div{
 }
 
 h5{
+    text-align: center;
     margin:25px;
     border-radius: 30px;
     border: 2px solid rgba(0, 0, 0, 0.886);
@@ -15,4 +16,36 @@ h5{
     font-size: medium;
     box-shadow: 2px 2px 10px;
     font-family: Roboto;
+}
+
+*.aux {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.boton {
+    margin-top: 1%;
+    width: 100%;
+    padding: 3%;
+    transition: all 1s ease;
+
+}
+
+.boton:hover {
+    margin-top: 1%;
+    width: 100%;
+    padding: 3%;
+    background: #47cbff;
+}
+
+
+
+.start {
+    background: rgb(242, 148, 148);
+}
+
+.end {
+    background: none;
 }

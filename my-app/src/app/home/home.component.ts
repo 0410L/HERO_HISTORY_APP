@@ -10,6 +10,11 @@ import {textosInterface } from '../textos.interface';  //interface textos (el "t
 export class HomeComponent implements OnInit {
   @Input() citesEpiquesHome: textosInterface[] = textosjson; //lectura de los textos.json
 
+  iniciar(){
+    this.pantallaPrincipal = !this.pantallaPrincipal;
+  }
+
+  pantallaPrincipal:boolean = (false);
 
   constructor() { }
   

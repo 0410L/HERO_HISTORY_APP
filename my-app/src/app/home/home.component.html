@@ -1,1 +1,12 @@
-<app-escena [citesEpiques]= "citesEpiquesHome"></app-escena>
+
+<div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh; overflow:hidden" *ngIf ="!pantallaPrincipal">
+    <div style="text-align: center">
+        <h2>Clica el botó per començar</h2>
+        <p></p>
+        <button type="button" (click)="iniciar()" class="btn btn-primary" style="justify-content: center;" >Iniciar</button>
+    </div>
+</div>
+
+<div class="container d-flex justify-content-center align-items-center" style="height:100vh">
+    <app-escena *ngIf="pantallaPrincipal" [citesEpiques]= "citesEpiquesHome"></app-escena>
+</div>    

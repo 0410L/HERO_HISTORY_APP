@@ -15,7 +15,7 @@ export class EscenaComponent implements OnInit {
   
   prev() {
     console.log(this.currentSentence)
-    if (this.currentSentence = 0){
+    if (this.currentSentence >0){
       this.currentSentence--;
     }
 
@@ -24,9 +24,11 @@ export class EscenaComponent implements OnInit {
   }
   next() {
     console.log(this.currentSentence)
-    if (this.currentSentence < this.currentSentence.length -1){
+    if (this.currentSentence < this.citesEpiques.length -1){
     this.currentSentence++;
+
     }
+    
   }
   
 

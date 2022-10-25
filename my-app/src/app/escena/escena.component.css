@@ -44,6 +44,7 @@ h5{
 
 .start {
     background: rgb(242, 148, 148);
+    transition: all 0.2s ease-in-out;
 }
 
 .end {

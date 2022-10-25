@@ -12,8 +12,8 @@ h5{
     margin:25px;
     border-radius: 30px;
     border: 2px solid rgba(0, 0, 0, 0.886);
-    padding: 10px;
-    font-size: medium;
+    padding: 15px;
+    font-size: small;
     box-shadow: 2px 2px 10px;
     font-family: Roboto;
 }

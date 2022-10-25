@@ -8,10 +8,11 @@ import {textosInterface } from '../textos.interface';  //interface textos (el "t
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  @Input() citesEpiquesHome: textosInterface[] = textosjson;
+  @Input() citesEpiquesHome: textosInterface[] = textosjson; //lectura de los textos.json
+
 
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 

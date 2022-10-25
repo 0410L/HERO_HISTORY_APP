@@ -10,13 +10,47 @@ export class EscenaComponent implements OnInit {
 
   @Input() citesEpiques: textosInterface[]=[];
 
-  currentSentence: number = (0);
-  prev(): number {
-    return this.currentSentence--;
+  currentSentence= 0;
+
+  
+  prev() {
+    console.log(this.currentSentence)
+    if (this.currentSentence = 0){
+      this.currentSentence--;
+    }
+
+    
+  
   }
+  next() {
+    console.log(this.currentSentence)
+    if (this.currentSentence < this.currentSentence.length -1){
+    this.currentSentence++;
+    }
+  }
+  
+
+
+/*
+currentSentence: number = (0);
+prev(): number {
+  return this.currentSentence--;
+}
+next(): number {
+  return this.currentSentence++;
+}
+*/
+
+  /*prev(): number {
+    if (this.currentSentence < 0)
+  {this.currentSentence = 0}
+  }
+
   next(): number {
-    return this.currentSentence++;
+    if (this.currentSentence < 0)
+  {this.currentSentence = 0}
   }
+  */
 
   constructor() { }
 

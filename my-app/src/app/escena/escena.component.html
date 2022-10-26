@@ -1,6 +1,6 @@
 <!--<span>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</span>-->
-<body class="fondo container-fluid" style="background-image: url(../../assets/img/{{citesEpiques[currentSentence].img}});">
-    <div>
+
+<div class="fondo container-fluid justify-content-center align-items-center" style="height:100vh; background-image: url(../../assets/img/{{citesEpiques[currentSentence].img}});">
         <div class="aux row">
             <div class="aux col-6">
                 <button (click)="prev()" class="boton">Anterior</button>
@@ -9,14 +9,13 @@
                 <button (click)="next()" class="boton">Següent</button>
             </div>
         </div>
-    </div>
     <div class="cita">
         <!--<div style="background-image: url(./../../assets/img/{{citesEpiques[currentSentence].img}})"></div>Escull 'Anterior' o 'Següent' per veure les diferents frases-->
         <h5 *ngFor="let textos of citesEpiques; let i=index"
         [ngClass]="currentSentence === i ? 'start' : 'end'">
         {{textos.text}}</h5>
     </div>
-</body>
+</div>
 
 
 

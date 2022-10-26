@@ -1,14 +1,16 @@
 <!--<body class="fondo container-fluid bg-primary">-->
-    <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh" *ngIf ="!pantallaPrincipal">
+    <div class="hero container-fluid d-flex justify-content-center align-items-center" style="height:100vh ; background-image: url(../../../assets/img/Etd58CoprbXJ.gif);
+    background-size: 7% auto; background-repeat: no-repeat; background-position: 50% 35%; width: 100%;" *ngIf ="!pantallaPrincipal">
         <div style="text-align:center">
-            <h2>Clica el botó per començar</h2>
+            <h2>¡Benvingut Heroi!</h2>
+            <h5>Clica el botó per començar</h5>
             <p></p>
             <button type="button" (click)="iniciar()" class="btn btn-danger" style="justify-content: center" >Iniciar</button>
             
         </div>
     </div>
 
-    <div class="container-fluid d-flex justify-content-center align-items-center" style="height:100vh">
+    <div class="monitor container-fluid center justify-content-center align-items-center" style="height:100vh">
         <app-escena *ngIf="pantallaPrincipal" [citesEpiques]= "citesEpiquesHome"></app-escena>
     </div>
 <!--</body>-->

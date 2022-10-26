@@ -12,16 +12,22 @@ h2{
     font-family: Roboto;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-size: contain;
-    background-repeat: round;
-    width: 100% 100%;
-
-
+h5{
+    font-family: Roboto;
 }
-
 
 ::-webkit-scrollbar {
     display: none;
+}
+
+.monitor{
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100% 100%;
+    display: 100%;
+    justify-content: center;
 }

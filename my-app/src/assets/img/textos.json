@@ -19,8 +19,13 @@
 },
 
 {
-    "img": "5.jpg",
-    "text": "Bonus-track"
+    "img": "spider.gif",
+    "text": "un gran poder implica una gran responsabilitat"
+},
+
+{
+    "img": "starwars.gif",
+    "text": "¡Que la força t'acompanyi!"
 }
 
 ]

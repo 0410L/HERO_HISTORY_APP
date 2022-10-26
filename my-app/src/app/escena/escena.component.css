@@ -1,3 +1,7 @@
+*{
+    overflow: hidden;
+}
+
 .cita{
     justify-content: center;
     align-content: center;
@@ -56,11 +60,11 @@ h5{
     background: white; opacity: 50%;
 }
 
-.fondo {
-    background-size: cover;
+body {
+    background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
-    max-width: 100%;
+    width: 100%;
 } 
 
 
@@ -71,5 +75,5 @@ h5{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
+}
 */

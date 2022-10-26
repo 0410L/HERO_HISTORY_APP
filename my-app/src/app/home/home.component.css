@@ -7,3 +7,17 @@ h2{
     font-size: xx-large;
     font-family: Roboto;
 }
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.lynx {
+    background-image: url("/my-app/src/assets/img/5.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}

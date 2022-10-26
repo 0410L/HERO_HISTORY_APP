@@ -53,5 +53,24 @@ h5{
 }
 
 .end {
-    background: none;
+    background: white; opacity: 50%;
 }
+
+.fondo {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 100%;
+} 
+
+
+.bg {
+    /* The image used */
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).webp");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

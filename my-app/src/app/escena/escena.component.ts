@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {textosInterface } from '../textos.interface';
+import {textosInterface } from 'src/assets/img/textos.interface';
 
 @Component({
   selector: 'app-escena',
@@ -8,27 +8,21 @@ import {textosInterface } from '../textos.interface';
 })
 export class EscenaComponent implements OnInit {
 
-  @Input() citesEpiques: textosInterface[]=[];
+  @Input() citesEpiques: textosInterface[]=[{text:'', img:''}];
 
   currentSentence= 0;
 
-  
   prev() {
     console.log(this.currentSentence)
     if (this.currentSentence >0){
       this.currentSentence--;
     }
-
-    
-  
   }
   next() {
     console.log(this.currentSentence)
     if (this.currentSentence < this.citesEpiques.length -1){
     this.currentSentence++;
-
     }
-    
   }
   
 

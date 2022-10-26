@@ -10,9 +10,13 @@
     </div>
 </div>
 <div class="cita">
+    <div class="fondo"  style="background-image: url(/my-app/src/assets/img/{{citesEpiques[currentSentence].img}})"></div>
     <h5 *ngFor="let textos of citesEpiques; let i=index"
     [ngClass]="currentSentence === i ? 'start' : 'end'">
     {{textos.text}}</h5>
-
 </div>
+
+<!--<div style="background-image: url(my-app/src/assets/img/3.jpg)"></div>-->
+
+
 

@@ -1,22 +1,24 @@
 <!--<span>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</span>-->
-<div>
-    <div class="aux row">
-        <div class="aux col-6">
-            <button (click)="prev()" class="boton">Anterior</button>
-        </div>
-        <div class="aux col-6">
-            <button (click)="next()" class="boton">Següent</button>
+<body class="container bg-primary" style="background-image: url(../../assets/img/{{citesEpiques[currentSentence].img}})">
+    <div>
+        <div class="aux row">
+            <div class="aux col-6">
+                <button (click)="prev()" class="boton">Anterior</button>
+            </div>
+            <div class="aux col-6">
+                <button (click)="next()" class="boton">Següent</button>
+            </div>
         </div>
     </div>
-</div>
-<div class="cita">
-    <div class="fondo"  style="background-image: url(/my-app/src/assets/img/{{citesEpiques[currentSentence].img}})"></div>
-    <h5 *ngFor="let textos of citesEpiques; let i=index"
-    [ngClass]="currentSentence === i ? 'start' : 'end'">
-    {{textos.text}}</h5>
-</div>
+    <div class="cita">
+        <!--<div style="background-image: url(./../../assets/img/{{citesEpiques[currentSentence].img}})"></div>Escull 'Anterior' o 'Següent' per veure les diferents frases-->
+        <h5 *ngFor="let textos of citesEpiques; let i=index"
+        [ngClass]="currentSentence === i ? 'start' : 'end'">
+        {{textos.text}}</h5>
+    </div>
 
-<!--<div style="background-image: url(my-app/src/assets/img/3.jpg)"></div>-->
+    <!--<div style="background-image: url(my-app/src/assets/img/3.jpg)"></div>-->
+</body>
 
 
 

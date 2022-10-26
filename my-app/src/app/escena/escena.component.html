@@ -1,5 +1,5 @@
-<!--<span>"El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial"</span>-->
-
+<!--contenedor on va allotjat l'array textos.json pero seleccionant nomes les imatges amb la etiqueta img, per veure els fons-->
+<!--Hola Ismael! Si, he fet unes extres i he animat les imatges de fons del superheroi ;)-->
 <div class="fondo container-fluid justify-content-center align-items-center" style="height:100vh; background-image: url(../../assets/img/{{citesEpiques[currentSentence].img}});">
         <div class="aux row">
             <div class="aux col-6">
@@ -10,7 +10,7 @@
             </div>
         </div>
     <div class="cita">
-        <!--<div style="background-image: url(./../../assets/img/{{citesEpiques[currentSentence].img}})"></div>Escull 'Anterior' o 'Següent' per veure les diferents frases-->
+        <!--Aquí es on es pasará l'array de textos-->
         <h5 *ngFor="let textos of citesEpiques; let i=index"
         [ngClass]="currentSentence === i ? 'start' : 'end'">
         {{textos.text}}</h5>

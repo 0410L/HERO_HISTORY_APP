@@ -1,16 +1,18 @@
-<!--<body class="fondo container-fluid bg-primary">-->
-    <div class="hero container-fluid d-flex justify-content-center align-items-center" style="height:100vh ; background-image: url(../../../assets/img/Etd58CoprbXJ.gif);
-    background-size: 7% auto; background-repeat: no-repeat; background-position: 50% 35%; width: 100%;" *ngIf ="!pantallaPrincipal">
-        <div style="text-align:center">
+<!-- condició *ngIf !pantallaPrincipal (!=negació) per fer apareixer la pantalla de Benvinguda i amagant tota la resta>-->
+    <div class="hero container-fluid d-flex justify-content-center align-items-center" style="height:100vh; background-image: url(../../../assets/img/pattern2.png);
+    background-size:contain; background-repeat: repeat; background-position: 30% 35%; overflow: auto;" *ngIf ="!pantallaPrincipal">
+    
+        <div class="inicial" style="text-align:center">
+            <img src="../../../assets/img/Etd58CoprbXJ.gif" style="width: 30%" alt="logo">
             <h2>¡Benvingut Heroi!</h2>
-            <h5>Clica el botó per començar</h5>
+            <h5>Clica el botó per començar l'aventura</h5>
             <p></p>
             <button type="button" (click)="iniciar()" class="btn btn-danger" style="justify-content: center" >Iniciar</button>
-            
         </div>
     </div>
 
+<!-- *ngIf pantallaPrincipal donará pass a veure la seguent pantalla del component Home (i amagant la de benvinguda) -->
     <div class="monitor container-fluid center justify-content-center align-items-center" style="height:100vh">
         <app-escena *ngIf="pantallaPrincipal" [citesEpiques]= "citesEpiquesHome"></app-escena>
     </div>
-<!--</body>-->
+

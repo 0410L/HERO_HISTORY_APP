@@ -11,6 +11,14 @@
 
 }
 
+.logo{
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
 h5{
     text-align: center;
     margin:25px;
